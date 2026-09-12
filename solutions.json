@@ -1,0 +1,10 @@
+{
+    "correct.cpp": { "verdict": "model_solution" },
+    "author_original.cpp": {
+        "verdict": "runtime_error",
+        "except": {
+            "samples": "correct",
+            "subtask1": "correct"
+        }
+    }
+}
