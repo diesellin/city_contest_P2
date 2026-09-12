@@ -1,5 +1,18 @@
 {
     "correct.cpp": { "verdict": "model_solution" },
+    "subtask1_bfs.cpp": {
+        "verdict": "incorrect",
+        "except": {
+            "subtask1": "correct"
+        }
+    },
+    "subtask2_dijkstra.cpp": {
+        "verdict": "incorrect",
+        "except": {
+            "subtask1": "correct",
+            "subtask2": "correct"
+        }
+    },
     "author_original.cpp": {
         "verdict": "runtime_error",
         "except": {

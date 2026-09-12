@@ -3,7 +3,6 @@ copy ../public/examples/01.in
 copy ../public/examples/02.in
 
 @subtask subtask1
-@include samples
 manual small-1.in
 gen1 10 20 0 1 random s1_1
 gen1 100 200 0 1 dag s1_2
@@ -25,7 +24,7 @@ gen1 500 1000 500 100 chain s3_3
 gen1 1000 5000 1000 100 random s3_4
 
 @subtask subtask4
-@include subtask3
+@include samples subtask3
 gen1 1000 10000 5000 100 random s4_1
 gen1 1000 20000 10000 100 dag s4_2
 gen1 1000 30000 10000 100 chain s4_3
