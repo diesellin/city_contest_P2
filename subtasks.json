@@ -9,17 +9,17 @@
         "subtask1": {
             "index": 1,
             "score": 5,
-            "validators": []
+            "validators": ["validator.cpp --subtask 1"]
         },
         "subtask2": {
             "index": 2,
             "score": 10,
-            "validators": []
+            "validators": ["validator.cpp --subtask 2"]
         },
         "subtask3": {
             "index": 3,
             "score": 35,
-            "validators": []
+            "validators": ["validator.cpp --subtask 3"]
         },
         "subtask4": {
             "index": 4,

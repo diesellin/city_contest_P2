@@ -8,6 +8,9 @@ gen1 10 20 0 1 random s1_1
 gen1 100 200 0 1 dag s1_2
 gen1 500 1000 0 1 chain s1_3
 gen1 100 200 0 1 unreachable s1_4
+manual n1_selfloop.in
+manual s1_multi_cycle.in
+manual s1_reverse_edge.in
 
 @subtask subtask2
 @include subtask1
@@ -15,6 +18,9 @@ gen1 50 100 0 100 random s2_1
 gen1 200 500 0 100 dag s2_2
 gen1 1000 5000 0 100 chain s2_3
 gen1 500 2000 0 100 unreachable s2_4
+manual s2_w100.in
+manual s2_parallel_weights.in
+gen2 chain100 1000 1 0 0 s2_5
 
 @subtask subtask3
 @include subtask2
@@ -22,6 +28,29 @@ gen1 50 100 50 100 random s3_1
 gen1 100 200 100 100 dag s3_2
 gen1 500 1000 500 100 chain s3_3
 gen1 1000 5000 1000 100 random s3_4
+manual m_n1_marks.in
+manual m_n1_marks_d1.in
+manual m_end_mark.in
+manual m_end_mark_d5.in
+manual m_boundary_d_w.in
+manual m_w100_d99.in
+manual m_w1_d1.in
+manual m_start_mark.in
+manual m_parallel_long_marked.in
+manual m_longer_path_more_marks.in
+manual m_unreach_end_mark.in
+manual m_cycle_back.in
+manual m_selfloop_multi.in
+manual m_dup_ops.in
+manual m_diff_d.in
+manual m_seven_chain.in
+manual m_diamond7.in
+manual m_greedy_killer_a.in
+manual m_greedy_killer_b.in
+gen2 layered 4 5 2 8 s3_5
+gen2 layered 8 6 2 14 s3_6
+gen1 1000 100000 100 100 random s3_7
+gen1 1000 3162 3162 100 random s3_8
 
 @subtask subtask4
 @include samples subtask3
@@ -29,3 +58,13 @@ gen1 1000 10000 5000 100 random s4_1
 gen1 1000 20000 10000 100 dag s4_2
 gen1 1000 30000 10000 100 chain s4_3
 gen1 1000 50000 20000 100 random s4_4
+gen2 layered 31 32 2 30 s4_5
+gen2 layered 20 49 3 200 s4_6
+gen2 diamond 499 5 0 0 s4_7
+gen2 diamond 499 3000 0 0 s4_8
+gen2 worst 1000 0 0 0 s4_9
+gen2 chain100 1000 100 5 0 s4_10
+gen2 chain100 1000 100 100000 0 s4_11
+gen1 1000 100000 100000 100 random s4_12
+gen1 1000 100000 100000 1 random s4_13
+gen1 1000 100000 100000 100 dag s4_14
